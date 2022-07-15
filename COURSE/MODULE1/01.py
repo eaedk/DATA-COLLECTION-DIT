@@ -2,6 +2,17 @@
 # Les DONNEES imbriquées (NESTED DATA)
 # Les Listes
 
+# PRE REQUIS
+# ----------
+# Imbriquer des données dans une liste
+# Imbriquer des donnees sur plusieurs niveaux
+
+# OBJECTIFS
+# ---------
+# Imbriquer des données dans les listes
+# Comprendre l'importance des imbrications
+# Evaluer la profondeur des imbrications de données
+
 
 NESTED1 = [
     ['a', 'b', 'c'],
@@ -23,9 +34,6 @@ A = [1, 2, 3, 4]
 
 [x for x in A if x % 2 == 0]
 
-for item in A:
-    if item % 2 ==0:
-        
 
 def divider(n=20):
     return '-'*n

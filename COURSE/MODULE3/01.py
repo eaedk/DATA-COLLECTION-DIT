@@ -1,7 +1,8 @@
 # Rest API
 # Fetching Data with requests modules
-import requests
 import json
+
+import requests
 
 
 def divider(n=20):

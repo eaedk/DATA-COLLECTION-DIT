@@ -79,22 +79,21 @@ def methodMap4(Liste: list, func) -> list:
 
 
 def flatListe1(Liste: list) -> list:
-	flatList = []
+    flatList = []
 
     for item in ListeT:
-    	for x in item:
-    		flatList.append(x)
+        for x in item:
+            flatList.append(x)
 
     return flatList
 
 
 def flatListe2(Liste: list) -> list:
-	return [
-	    item
-	    for subitem in Liste
-	    for item in subitem
-	]
-
+    return [
+        item
+        for subitem in Liste
+        for item in subitem
+    ]
 
 
 if __name__ == '__main__':

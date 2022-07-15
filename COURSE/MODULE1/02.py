@@ -2,6 +2,19 @@
 # Les DONNEES imbriquées (NESTED DATA)
 # Les Dictionnaires
 
+
+# PRE REQUIS
+# ----------
+# Imbriquer des données dans un dictionnaire
+# Imbriquer des donnees sur plusieurs niveaux
+
+# OBJECTIFS
+# ---------
+# Imbriquer des données dans les dictionnaires
+# Comprendre l'importance des imbrications
+# Evaluer la profondeur des imbrications de données
+
+
 DATA = {
     'personal_data': {
         'name': 'Lauren',
@@ -32,9 +45,6 @@ DATA = {
 }
 
 
-print(DATA.get('personal_data', None))
-
-
 def divider(n=20):
     return '-'*n
 
@@ -44,6 +54,7 @@ if __name__ == '__main__':
     print(divider())
     print(DATA)
     print(type(DATA))
+    print(DATA.get('personal_data', None))
 
     # Display a Color Item (1)
     print(divider())

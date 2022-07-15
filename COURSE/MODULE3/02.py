@@ -1,8 +1,8 @@
 # Rest API
 # Generating Get URLs
-import requests
 import json
 
+import requests
 
 URL1 = "https://api.datamuse.com/words"
 URL2 = "https://www.google.com/search"

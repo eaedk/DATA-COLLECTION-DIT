@@ -12,21 +12,13 @@ COPIED_VESRION2 = ORIGINAL.copy()
 
 
 def divider(n=20):
-    """Summary
-
-    Args:
-        n (int, optional): Description
-
-    Returns:
-        TYPE: Description
-    """
     return '-'*n
 
 
 if __name__ == '__main__':
     # Print ORIGINAL List
-    # print(divider())
-    # print(ORIGINAL)
+    print(divider())
+    print(ORIGINAL)
 
     # Print COPIED VESRION List
     # Check if two List are equal
@@ -54,11 +46,10 @@ if __name__ == '__main__':
     print(divider())
     print('Look at now the COPIED VESRION')
     print(COPIED_VESRION)
-    
+
     COPIED_VESRION[0].append(['molaires'])
-    
+
     print('\n')
     print(ORIGINAL)
     print(COPIED_VESRION)
     print(COPIED_VESRION2)
-    

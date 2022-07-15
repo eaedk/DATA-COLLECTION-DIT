@@ -2,6 +2,19 @@
 # Structure Nested Data
 # Structuration des données Imbriquées
 
+
+# PRE REQUIS
+# ----------
+# Connaitre les Boubles en python
+# Avoir la maitrise fes utilitaires de parcours de liste
+# Maitriser les structures conditionnelles
+
+# OBJECTIFS
+# ---------
+# Savoir structurer les donnés imbriquées
+# Détecter les niveaux d'imbrications
+
+
 NESTED = [
     1,
     2,
@@ -12,14 +25,6 @@ NESTED = [
 
 
 def divider(n=20):
-    """Summary
-
-    Args:
-        n (int, optional): Description
-
-    Returns:
-        TYPE: Description
-    """
     return '-'*n
 
 
@@ -29,6 +34,8 @@ if __name__ == '__main__':
     print(NESTED)
     print('\n')
 
+    # Afficher les niveaux
+    # Imbrications de la donnée NESTED
     for item in NESTED:
         print('Level1: ')
         if isinstance(item, list):

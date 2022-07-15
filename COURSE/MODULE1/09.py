@@ -43,14 +43,6 @@ ORIGINAL = [
 
 
 def divider(n=20):
-    """Summary
-
-    Args:
-        n (int, optional): Description
-
-    Returns:
-        TYPE: Description
-    """
     return '-'*n
 
 

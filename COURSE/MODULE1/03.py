@@ -1,36 +1,35 @@
 #!/usr/bin/env python3
 # Utilisation du module JSON
 
+# PRE REQUIS
+# ----------
+# Connaitre la structure KEY-VALUE
+# Manipuler les dictionnaires
+# Connaitre le JSON format
+# Importation des modules nécessaire
+# Connaissance breve du module JSON de python
+
+# OBJECTIFS
+# ---------
+# Importer le module JSON
+# Manipuler les fonctions du module JSON
+# Parser les données
+# Reconstruire le type initial de la donnée
+# Serialiser et désérialiser
+
+
 import json
 
 DATA = '\n\n\n{\n "resultCount": 25,\n "results": [\n{"wrapperType": "track", "kind": "podcast", "collectionId": 10892}]}'
 
 
 def divider(n=20):
-    """Summary
-
-    Args:
-        n (int, optional): Description
-
-    Returns:
-        TYPE: Description
-    """
     return '-'*n
 
 
 def pretty(obj={},
            sort_keys=True,
            indent=2):
-    """Summary
-
-    Args:
-        obj (dict, optional): Description
-        sort_keys (bool, optional): Description
-        indent (int, optional): Description
-
-    Returns:
-        TYPE: Description
-    """
     return json.dumps(
         obj,
         sort_keys=sort_keys,
@@ -45,12 +44,6 @@ if __name__ == '__main__':
     LOADER = json.loads(DATA)
     print(LOADER)
     print(type(LOADER))
-
-
-
-
-
-
 
     # Load DATA with JSON
     # print Dict keys
