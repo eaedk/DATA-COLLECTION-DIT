@@ -170,3 +170,64 @@
 # Trouver le moyen de collecter ces données
 # Avec du python (STRUCTURE DE DONNEE)
 # Avec du python (SHALLOW and DEEPCOPY)
+#
+#
+# Cacher les données importantes
+# Utilisation d'une API avec le fichier .env
+# Headers:
+# 	- Des données d'authentification
+# 	- On a les données (KEY API/TOKEN/Etc...)
+# 		- TOKEN (Headers D'authorisation)
+# 		- KEY API aussi (Authentification/Authorisation)
+# 		- Ce sont des données à protéger
+# 		- Pour faire cette Protection:
+# 			- Module python-dotenv
+# 			- Qui utilise un fichier d'environnement
+# 			- URL de python-dotenv (https://pypi.org/project/python-dotenv/)
+# 			- Pour l'utilisation:
+# 				- Créer un fichier .env a la racine du projet
+# 				- Exemple d'API avec une API KEY
+# 					- URL (https://apilayer.com/marketplace/currency_data-api)
+# 					- Pour afficher les variables d'environnements
+# 						- import os
+# 						- from dotenv import load_dotenv
+# 						- load_dotenv()
+# 						- os.environ.get('API_KEY')
+# 						- le nom API_KEY n'est pas figé
+# 						- il dépendra de votre nommenclature
+#
+# Le SCRAPPING
+# - Pour les formats de données nous avons
+# 	- XML
+# 	- JSON
+# 	- TEXT/PLAIN
+# 	- HTML
+#
+# Le Scrapping match avec le format HTML
+# - Ainsi le format HTML est le format des fichiers .html/.htm
+# - Pour cela le module requests est utilisé
+# - Faire la requête en GET
+# - Récupérer le contenu en STRING
+# - Puis le PARSER avec du BeautifulSoup
+# - Installer donc le module BS4 de python
+# - Les outils indispensables sont donc:
+# 	- module requests
+# 	- module bs4
+# 		- URL (https://pypi.org/project/beautifulsoup4/)
+# 		- DOC (https://beautiful-soup-4.readthedocs.io/en/latest/)
+# 	- URL de site WEB(.html/.html)
+# 	- Exemple de site WEB:
+# 		- URL (https://dit.sn/)
+# 		- SCRAPPING de DIT...
+# 		- Procédure de scrapping
+# 			- Afficher le code source de la page
+# 			- Faire une requete GET sur l'URL
+# 			- Parser avec BeautifulSoup
+# 			- Obtenir ainsi l'instance de BeautifoulSoup
+# 				- Trouver des éléments du DOM avec les TAGS
+# 					- <meta property="og:locale" content="fr_FR" />
+# 					- meta est un TAG (Balise)
+# 				- Pour récupérer la liste on utilise
+# 					- la fonction find_all()
+# 					- la fonction find_all(<TAG>)
+#
