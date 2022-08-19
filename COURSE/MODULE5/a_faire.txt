@@ -1,0 +1,49 @@
+1. Completer le code de HtmlFactory, afin de récupérer les données
+2. Mettre ces données sous forme de liste d'object
+3. Assurez vous que les noeuds présents dans cette liste soient exactement comme dans CsvFactory, et JsonFactory
+4. Grace aux trois Factory, implémenter une méthode qui concatène tous les trois datas. C'est à dire:
+	- Celui de CsvFactory
+	- Celui de JsonFactory
+	- Celui de HtmlFactory
+5. Utiliser le lien de la BCEAO concernant les devises:
+	- Ajouter une nouvelle entrée dans la donnée globale
+	- Puis cette entrée doit contenir (Euro, Dollar, Yen)
+	- Attribuer de manière aléatoire ces Devises
+	- Grace aux données collecter via Scrapping du site de la BCEAO concernant les devises
+	- Ajouter une nouvelle entrée qui donnera la conversion en XOF
+		- Ainsi on aura une entrée contenant la devise attribuée
+		- Puis une entrée contenant la conversion en XOF via les données de la BCEAO
+6. Utiliser l'API FREE de countries
+    - Chercher l'API countries sur le NET
+	- Pour ajouter des pays de manière aléatoire dans une nouvelle entrée (Colonne)
+	- Puis y joindre les flags de ces pays dans une nouvelle entrée
+7. Implémenter une base de données averc vos acquis en SQL
+	- Architecturer une structure cohérente si vous utiliser du relationnel
+	- Ou une structure nosql si vous utilisez du nosql
+	- stocker les informations obtenues des traitements sous jacents
+	- Et remplisser la base de données en implémenter dans un fichier le script de connexion à la base de données
+8. Parcourez la documentation de FASTAPI
+    - URL: (https://fastapi.tiangolo.com/)
+	- Puis mettez en place une API qui délivrera sur une URL la liste des données se trouvant dans votre base de donnnées
+
+
+Bonnes pratiques
+----------------
+Livrer un code clair et lisible
+Respecter les bonnes pratiques
+Eviter les codes répétitifs
+Mettre sur GITHUB votre solution
+Architecturer de manière correcte votre dossier
+Puis mettez à jour et écriver des tests pour vos implémentation
+Avec FASTAPI. Aller avec l'ORM de SQLACHEMY selon votre aisance
+NB: L'approche SQLALCHEMY est plus recommandée
+
+NB: Assurez-vous de joindre de manière détaillé
+une documentation README de vos fonctionnalité principales et de comment démarer votre projet
+
+NB: Noubliez pas d'implémenter les tests unitaires de manère basique avec (ASSERT....)
+
+
+PROJET A RENDRE en partageant le lien de chaque REPO au plus tard le cours projet
+
+Ce projet comptera pour la première note
