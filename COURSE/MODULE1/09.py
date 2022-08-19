@@ -5,7 +5,6 @@
 import json
 from collections import Counter
 
-
 ORIGINAL = [
     [
         ['one', 'two'],

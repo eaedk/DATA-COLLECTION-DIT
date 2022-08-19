@@ -4,7 +4,6 @@
 # URL formatter online (https://jsonformatter.curiousconcept.com/)
 import requests
 
-
 # URL = 'https://restcountries.com/v2/all'
 URL2 = 'https://restcountries.com/v2/name/{name}'
 URL3 = 'https://api.datamuse.com/words'

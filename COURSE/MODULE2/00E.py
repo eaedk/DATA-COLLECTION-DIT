@@ -2,7 +2,6 @@
 # Utilisation de Map
 import math
 
-
 Liste = [x for x in range(1, 11)]
 
 # Exercice

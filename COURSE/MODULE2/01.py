@@ -3,7 +3,6 @@
 # Filter Module
 import math
 
-
 # Generate Liste
 Liste = [x for x in range(10)]
 

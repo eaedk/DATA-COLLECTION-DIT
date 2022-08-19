@@ -1,7 +1,6 @@
 import bs4
-from bs4 import BeautifulSoup
 import requests
-
+from bs4 import BeautifulSoup
 
 URL = 'https://dit.sn/'
 
