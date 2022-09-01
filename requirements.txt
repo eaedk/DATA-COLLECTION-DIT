@@ -33,3 +33,4 @@ wcwidth==0.2.5
 fastapi
 uvicorn
 pymongo
+pytest
