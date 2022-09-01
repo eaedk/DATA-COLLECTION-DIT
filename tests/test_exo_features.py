@@ -1,4 +1,4 @@
-from COURSE.MODULE5.exo import concat_data, add_random_currencies, add_random_countries,CsvFactory, JsonFactory, HtmlFactory
+from COURSE.MODULE5.exo import concat_data, add_random_currencies, add_random_countries, CsvFactory, JsonFactory, HtmlFactory
 
 
 def test_concat_data():
