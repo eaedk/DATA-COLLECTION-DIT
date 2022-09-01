@@ -1,7 +1,7 @@
-from .libraries.utils import Utils
-from .libraries.csv import CsvFactory
-from .libraries.json import JsonFactory
-from .libraries.html import HtmlFactory
+from COURSE.MODULE5.libraries.utils import Utils
+from COURSE.MODULE5.libraries.csv import CsvFactory
+from COURSE.MODULE5.libraries.json import JsonFactory
+from COURSE.MODULE5.libraries.html import HtmlFactory
 import pandas as pd
 import numpy as np
 import requests, bs4, re
@@ -77,17 +77,21 @@ def add_random_countries(data:list):
 
 if __name__ == '__main__':
     """"""
-
+    print("PROCESSING STARTED")
     # concat data from the 3 sources
     all_data = concat_data(list_of_data=[JsonFactory.main(),HtmlFactory.main(),CsvFactory.main() ])
+    print(pd.DataFrame(all_data).head(3))
+    print("PROCESSING IN PROGRESS...")
 
     # BCEAO
     all_data_with_currencies = scrapping_bceao(data=all_data)
-    # print(pd.DataFrame(all_data_with_currencies).head(3))
+    print(pd.DataFrame(all_data_with_currencies).head(3))
+    print("PROCESSING IN PROGRESS...")
 
     # Country
     all_data_with_countries = add_random_countries(data=all_data_with_currencies)
-    # print(pd.DataFrame(all_data_with_countries).head(3))
+    print(pd.DataFrame(all_data_with_countries).head(3))
+    print("PROCESSING IN PROGRESS...")
 
     # MongoDB
     # Get the database
@@ -95,9 +99,10 @@ if __name__ == '__main__':
     # get collection and insert all
     collection_name = dbname["contacts_items"]
     print(Utils.divider())
-    collection_name.delete_many() # clean the collection before adding contact
+    collection_name.delete_many({}) # clean the collection before adding contact
     print(f"Number of element in the collection BEFORE insertion: {collection_name.count_documents({})}")
     result = collection_name.insert_many(all_data_with_countries)
     print(Utils.divider())
     print(f"Number of element in the collection AFTER insertion: {collection_name.count_documents({})}")
     # result.inserted_ids # => [ObjectId('54f113fffba522406c9cc20e'), ObjectId('54f113fffba522406c9cc20f'), ...]
+    print("PROCESSING DONE!!!")
