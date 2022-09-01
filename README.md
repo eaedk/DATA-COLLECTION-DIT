@@ -9,11 +9,11 @@ You need to have [`Python3`](https://www.python.org/) on your system. Then you c
 
 - Windows:
         
-        python3 -m venv venv; venv\Scripts\activate; python -m pip install --upgrade pip; python -m pip install -qr requirements.txt; python COURSE/setup.py install 
+        python3 -m venv venv; venv\Scripts\activate; python -m pip install -q --upgrade pip; python -m pip install -qr requirements.txt; python COURSE/setup.py install 
 
 - Linux & MacOs:
         
-        python3 -m venv venv; source venv/bin/activate; python -m pip install --upgrade pip; python -m pip install -qr requirements.txt; python COURSE/setup.py install 
+        python3 -m venv venv; source venv/bin/activate; python -m pip install -q --upgrade pip; python -m pip install -qr requirements.txt; python COURSE/setup.py install 
 
 
 ## Evaluation
@@ -23,3 +23,16 @@ You can run this command bellow being at the root of the repository and having t
 ```command
 pytest -v
 ```
+
+## Execution
+### Scrapping and DB insertion
+Run this command bellow being at the root of the repository and having the `venv` activated.
+- Linux & MacOs:
+        
+        python COURSE/MODULE5/exo.py 
+
+### API
+Run this command bellow being at the root of the repository and having the `venv` activated.
+- Linux & MacOs:
+        
+        uvicorn main:app

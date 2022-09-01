@@ -22,5 +22,5 @@ def test_read_count_contacts():
 def test_read_all_contacts():
     response = client.get("/all-contacts")
     assert response.status_code == 200
-    assert isinstance(response.json()['all_contacts'], (list, dict) )
+    assert isinstance(response.json()['contacts'], (list, dict) )
     

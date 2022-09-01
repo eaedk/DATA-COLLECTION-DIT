@@ -59,7 +59,7 @@ def add_random_currencies(data:list):
     df_data['currency'] = [ df.loc[i,"devise"] for i in currency_indexes] # add random devise
     df_data['conv_to_xof'] = [ df.loc[i,"vente"] for i in currency_indexes]
     
-    return df_data.to_dict('records')
+    return df_data.fillna('').to_dict('records')
 
 def add_random_countries(data:list):
 
@@ -72,7 +72,7 @@ def add_random_countries(data:list):
     df_data['country'] = [ result[i]["name"]['common'] for i in country_indexes] # add random country
     df_data['flag'] = [ result[i]['flags']['png'] for i in country_indexes]
 
-    return df_data.to_dict('records')
+    return df_data.fillna('').to_dict('records')
 
 
 if __name__ == '__main__':

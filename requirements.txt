@@ -34,3 +34,4 @@ fastapi
 uvicorn
 pymongo
 pytest
+lxml
