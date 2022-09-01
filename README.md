@@ -9,11 +9,11 @@ You need to have [`Python3`](https://www.python.org/) on your system. Then you c
 
 - Windows:
         
-        python3 -m venv venv; venv\Scripts\activate; python -m pip install --upgrade pip; python -m pip install -qr requirements.txt; COURSE/setup.py install 
+        python3 -m venv venv; venv\Scripts\activate; python -m pip install --upgrade pip; python -m pip install -qr requirements.txt; python COURSE/setup.py install 
 
 - Linux & MacOs:
         
-        python3 -m venv venv; source venv/bin/activate; python -m pip install --upgrade pip; python -m pip install -qr requirements.txt; COURSE/setup.py install 
+        python3 -m venv venv; source venv/bin/activate; python -m pip install --upgrade pip; python -m pip install -qr requirements.txt; python COURSE/setup.py install 
 
 
 ## Evaluation
