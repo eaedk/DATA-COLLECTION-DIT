@@ -36,7 +36,7 @@ def get_database():
     # Create the database for our example (we will use the same database throughout the tutorial
     return client['data_collection']
 
-def scrapping_bceao(data:list):
+def add_random_currencies(data:list):
 
     URL = "https://www.bceao.int/fr/cours/cours-des-devises-contre-Franc-CFA-appliquer-aux-transferts"
     result = httpFetcher(URL).text
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     print("PROCESSING IN PROGRESS...")
 
     # BCEAO
-    all_data_with_currencies = scrapping_bceao(data=all_data)
+    all_data_with_currencies = add_random_currencies(data=all_data)
     print(pd.DataFrame(all_data_with_currencies).head(3))
     print("PROCESSING IN PROGRESS...")
 
