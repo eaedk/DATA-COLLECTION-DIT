@@ -1,5 +1,5 @@
 from typing import Union
-from .exo import get_database
+from COURSE.MODULE5.exo import get_database
 from fastapi import FastAPI
 
 app = FastAPI()
